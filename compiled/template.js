@@ -19,19 +19,19 @@ module.exports = function (source) {
       { 'class': "VueTables VueTables--" + this.source },
       [h(
         'div',
-        { 'class': 'row' },
+        { 'class': 'columns' },
         [h(
           'div',
-          { 'class': 'col-md-6' },
+          { 'class': 'column is-half' },
           [normalFilter]
         ), h(
           'div',
-          { 'class': 'col-md-6' },
+          { 'class': 'column is-half' },
           [dropdownPagination, perPage]
         )]
       ), h(
         'div',
-        { 'class': 'table-responsive' },
+        null,
         [h(
           'table',
           { 'class': 'VueTables__table table ' + this.opts.skin },

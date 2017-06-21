@@ -1,6 +1,6 @@
 {
-  "name": "vue-tables-2",
-  "description": "Vue.js 2 grid components",
+  "name": "vue-tables-2-bulma",
+  "description": "Bulma enabled vue.js 2 grid components",
   "main": "index.js",
   "license": "MIT",
   "keywords": [
@@ -9,7 +9,7 @@
     "tables",
     "grids"
   ],
-  "homepage": "https://github.com/matfish2/vue-tables-2",
+  "homepage": "https://github.com/daenuprobst/vue-tables-2",
   "ignore": [
     "**/.*",
     "node_modules",

@@ -26,22 +26,30 @@ module.exports = function (h, that) {
         attrs: { id: 'VueTables__' + column + '-filter' }
       },
       [h(
-        'select',
-        { 'class': 'form-control',
-          on: {
-            change: search
-          },
-          attrs: {
-            name: 'vf__' + column,
-            value: that.query[column] }
-        },
+        'p',
+        { 'class': 'control' },
         [h(
-          'option',
-          {
-            attrs: { value: '' }
-          },
-          [that.display('defaultOption', { column: that.getHeading(column) })]
-        ), options]
+          'span',
+          { 'class': 'select' },
+          [h(
+            'select',
+            {
+              on: {
+                'change': search
+              },
+              attrs: {
+                name: 'vf__' + column,
+                value: that.query[column] }
+            },
+            [h(
+              'option',
+              {
+                attrs: { value: '' }
+              },
+              [that.display('defaultOption', { column: that.getHeading(column) })]
+            ), options]
+          )]
+        )]
       )]
     );
   };

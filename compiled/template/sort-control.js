@@ -6,7 +6,7 @@ module.exports = function (h, that) {
     if (!that.sortable(column)) return '';
     return h(
       'span',
-      { 'class': 'VueTables__sort-icon pull-right ' + that.sortableChevronClass(column) },
+      { 'class': 'VueTables__sort-icon ' + that.sortableChevronClass(column) },
       []
     );
   }.bind(that);

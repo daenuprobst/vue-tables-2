@@ -11,7 +11,7 @@ module.exports = function (h, that) {
       { "class": "VueTables__no-results" },
       [h(
         "td",
-        { "class": "text-center",
+        { "class": "has-text-centered",
           attrs: { colspan: colspan }
         },
         [that.display(that.loading ? 'loading' : 'noResults')]

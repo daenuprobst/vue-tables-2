@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 module.exports = function (h, that) {
 
@@ -10,7 +10,7 @@ module.exports = function (h, that) {
         for (var pag = 1; pag <= that.totalPages; pag++) {
             var selected = that.page == pag;
             pages.push(h(
-                'option',
+                "option",
                 {
                     attrs: { value: pag, selected: selected }
                 },
@@ -20,33 +20,41 @@ module.exports = function (h, that) {
 
         var id = 'VueTables__dropdown-pagination_' + that.id;
         return h(
-            'div',
-            { 'class': 'form-group form-inline pull-right VueTables__dropdown-pagination',
+            "div",
+            { "class": "field pull-right VueTables__dropdown-pagination",
                 directives: [{
-                    name: 'show',
+                    name: "show",
                     value: that.totalPages > 1
                 }]
             },
             [h(
-                'label',
+                "label",
                 {
-                    attrs: { 'for': id }
-                },
+                    attrs: { "for": id },
+                    "class": "label" },
                 [that.display('page')]
             ), h(
-                'select',
-                { 'class': 'form-control',
-                    attrs: { name: 'page',
+                "p",
+                { "class": "control" },
+                [h(
+                    "span",
+                    { "class": "select" },
+                    [h(
+                        "select",
+                        { "class": "form-control",
+                            attrs: { name: "page",
 
-                        value: that.page,
+                                value: that.page,
 
-                        id: id
-                    },
-                    ref: 'page', on: {
-                        change: that.setPage.bind(that, null)
-                    }
-                },
-                [pages]
+                                id: id
+                            },
+                            ref: "page", on: {
+                                "change": that.setPage.bind(that, null)
+                            }
+                        },
+                        [pages]
+                    )]
+                )]
             )]
         );
     }

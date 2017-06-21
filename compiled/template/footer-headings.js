@@ -18,7 +18,7 @@ module.exports = function (h, that) {
         "th",
         {
           on: {
-            click: that.orderByColumn.bind(that, column)
+            "click": that.orderByColumn.bind(that, column)
           },
           "class": that.sortableClass(column) },
         [h(
@@ -33,7 +33,7 @@ module.exports = function (h, that) {
               value: that.sortable(column)
             }],
 
-            "class": "VueTables__sort-icon pull-right"
+            "class": "VueTables__sort-icon"
           }, "class", that.sortableChevronClass(column)),
           []
         )]

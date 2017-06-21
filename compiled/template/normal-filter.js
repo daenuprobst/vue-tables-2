@@ -10,27 +10,31 @@ module.exports = function (h, that) {
     var id = 'VueTables__search_' + that.id;
     return h(
       'div',
-      { 'class': 'form-group form-inline pull-left VueTables__search' },
+      { 'class': 'field VueTables__search' },
       [h(
         'label',
         {
-          attrs: { 'for': id }
-        },
+          attrs: { 'for': id },
+          'class': 'label' },
         [that.display('filter')]
       ), h(
-        'input',
-        { 'class': 'form-control',
-          attrs: { type: 'text',
-            value: that.query,
-            placeholder: that.display('filterPlaceholder'),
+        'p',
+        { 'class': 'control' },
+        [h(
+          'input',
+          { 'class': 'input',
+            attrs: { type: 'text',
+              value: that.query,
+              placeholder: that.display('filterPlaceholder'),
 
-            id: id
+              id: id
+            },
+            on: {
+              'keyup': search
+            }
           },
-          on: {
-            keyup: search
-          }
-        },
-        []
+          []
+        )]
       )]
     );
   }

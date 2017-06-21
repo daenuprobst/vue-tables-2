@@ -8,26 +8,34 @@ module.exports = function (h, that) {
     var id = 'VueTables__limit_' + that.id;
     return h(
       'div',
-      { 'class': 'form-group form-inline pull-right VueTables__limit' },
+      { 'class': 'field VueTables__limit' },
       [h(
         'label',
         {
-          attrs: { 'for': id }
-        },
+          attrs: { 'for': id },
+          'class': 'label' },
         [that.display('limit')]
       ), h(
-        'select',
-        { 'class': 'form-control',
-          attrs: { name: 'limit',
-            value: that.limit,
+        'p',
+        { 'class': 'control' },
+        [h(
+          'span',
+          { 'class': 'select' },
+          [h(
+            'select',
+            {
+              attrs: { name: 'limit',
+                value: that.limit,
 
-            id: id
-          },
-          on: {
-            change: that.setLimit.bind(that)
-          }
-        },
-        [perpageValues]
+                id: id
+              },
+              on: {
+                'change': that.setLimit.bind(that)
+              }
+            },
+            [perpageValues]
+          )]
+        )]
       )]
     );
   }

@@ -20,7 +20,7 @@ module.exports = function () {
     debounce: 500,
     dateFormat: "DD/MM/YYYY",
     toMomentFormat: false,
-    skin: "table-striped table-bordered table-hover",
+    skin: "is-striped",
     columnsDisplay: {},
     texts: {
       count: "Showing {from} to {to} of {count} records|{count} records|One record",
