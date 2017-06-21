@@ -1,17 +1,17 @@
 {
-  "name": "vue-tables-2",
-  "description": "Vue.js 2 grid components",
+  "name": "vue-tables-2-bulma",
+  "description": "Bulma enabled Vue.js 2 grid components",
   "version": "0.6.26",
   "keywords": [
     "vue2",
     "vuex",
-    "bootstrap",
+    "bulma",
     "tables",
     "grids"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/matfish2/vue-tables-2"
+    "url": "https://github.com/daenuprobst/vue-tables-2"
   },
   "files": [
     "compiled"
@@ -22,7 +22,7 @@
     "merge": "^1.2.0",
     "moment": "^2.11.1",
     "vue": ">=2.0.0",
-    "vue-pagination-2": "^0.3",
+    "vue-pagination-2-bulma": "^0.3",
     "vue-resource": "^0.9.0"
   },
   "scripts": {
