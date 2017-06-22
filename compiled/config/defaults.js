@@ -35,8 +35,8 @@ module.exports = function () {
     },
     sortIcon: {
       base: 'fa',
-      up: 'fa-chevron-circle-up',
-      down: 'fa-chevron-circle-down'
+      up: 'fa-chevron-up',
+      down: 'fa-chevron-down'
     },
     customSorting: {},
     filterByColumn: false,
