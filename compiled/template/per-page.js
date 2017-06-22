@@ -8,13 +8,15 @@ module.exports = function (h, that) {
     var id = 'VueTables__limit_' + that.id;
     return h(
       'div',
-      { 'class': 'field VueTables__limit' },
+      { 'class': 'field VueTables__limit is-pulled-right has-addons' },
       [h(
-        'label',
-        {
-          attrs: { 'for': id },
-          'class': 'label' },
-        [that.display('limit')]
+        'p',
+        { 'class': 'control' },
+        [h(
+          'a',
+          { 'class': 'button is-static' },
+          [that.display('limit')]
+        )]
       ), h(
         'p',
         { 'class': 'control' },

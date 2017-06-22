@@ -12,12 +12,6 @@ module.exports = function (h, that) {
       'div',
       { 'class': 'field VueTables__search' },
       [h(
-        'label',
-        {
-          attrs: { 'for': id },
-          'class': 'label' },
-        [that.display('filter')]
-      ), h(
         'p',
         { 'class': 'control' },
         [h(
