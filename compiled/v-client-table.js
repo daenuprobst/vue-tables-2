@@ -1,6 +1,6 @@
 'use strict';
 
-var _vuePagination = require('vue-pagination-2');
+var _vueBulmaPagination = require('vue-bulma-pagination-2');
 
 var _vuex = require('./state/vuex');
 
@@ -34,7 +34,7 @@ exports.install = function (Vue, globalOptions, useVuex, customTemplate) {
   var client = _merge2.default.recursive(true, (0, _table2.default)(), {
     name: 'client-table',
     components: {
-      Pagination: _vuePagination.Pagination
+      Pagination: _vueBulmaPagination.Pagination
     },
     render: customTemplate ? customTemplate : template('client'),
     props: {
@@ -84,7 +84,7 @@ exports.install = function (Vue, globalOptions, useVuex, customTemplate) {
       if (!this.vuex) {
         this.registerClientFilters();
 
-        _vuePagination.PaginationEvent.$on('vue-pagination::' + this.id, function (page) {
+        _vueBulmaPagination.PaginationEvent.$on('vue-pagination::' + this.id, function (page) {
           this.setPage(page);
         }.bind(this));
       }

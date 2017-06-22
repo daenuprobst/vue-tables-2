@@ -1,7 +1,7 @@
 {
-  "name": "vue-tables-2-bulma",
+  "name": "vue-bulma-tables-2",
   "description": "Bulma enabled vue.js 2 grid components",
-  "version": "0.6.26",
+  "version": "0.6.28",
   "keywords": [
     "vue2",
     "vuex",
@@ -22,7 +22,7 @@
     "merge": "^1.2.0",
     "moment": "^2.11.1",
     "vue": ">=2.0.0",
-    "vue-pagination-2-bulma": "^0.3",
+    "vue-bulma-pagination-2": "^0.3",
     "vue-resource": "^0.9.0"
   },
   "scripts": {

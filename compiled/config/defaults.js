@@ -34,9 +34,9 @@ module.exports = function () {
       defaultOption: 'Select {column}'
     },
     sortIcon: {
-      base: 'glyphicon',
-      up: 'glyphicon-chevron-up',
-      down: 'glyphicon-chevron-down'
+      base: 'fa',
+      up: 'fa-chevron-circle-up',
+      down: 'fa-chevron-circle-down'
     },
     customSorting: {},
     filterByColumn: false,
